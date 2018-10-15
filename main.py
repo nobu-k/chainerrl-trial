@@ -56,7 +56,7 @@ for i in range(1, n_episodes + 1):
     agent.stop_episode_and_train(obs, reward, done)
 print('trained')
 
-env = wrappers.Monitor(env, "/data", video_callable=lambda x: True, force=True)
+env = wrappers.Monitor(env, "/logs", video_callable=lambda x: True, force=True)
 obs = env.reset()
 done = False
 R = 0
