@@ -1,4 +1,4 @@
 #!/bin/sh
 
 apt install -y xvfb libav-tools
-python main.py
+xvfb-run -s "-screen 0 1400x900x24" python main.py
